@@ -1,0 +1,12 @@
+{
+  "domain": "tekmar_gateway",
+  "name": "Tekmar Gateway 486",
+  "codeowners": [],
+  "config_flow": true,
+  "dependencies": [],
+  "documentation": "https://github.com/AyyySea/ha-tekmar-gateway",
+  "iot_class": "cloud_polling",
+  "issue_tracker": "https://github.com/AyyySea/ha-tekmar-gateway/issues",
+  "requirements": ["requests>=2.31.0"],
+  "version": "1.0.0"
+}

@@ -1,0 +1,57 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "Connect to Tekmar Gateway",
+        "description": "Enter the credentials for a Watts Home / tekmar account that has access to your Gateway 486. For safety, create a dedicated user via the gateway web UI (Users \u2192 Invite) rather than reusing your primary login.",
+        "data": {
+          "username": "Email",
+          "password": "Password"
+        }
+      },
+      "building": {
+        "title": "Select building",
+        "description": "Your account has access to more than one building. Pick the one to manage in Home Assistant.",
+        "data": {
+          "building_id": "Building"
+        }
+      },
+      "reauth_confirm": {
+        "title": "Re-authenticate Tekmar Gateway",
+        "description": "Tekmar rejected the stored credentials for {username}. Re-enter the current password.",
+        "data": {
+          "password": "Password"
+        }
+      }
+    },
+    "error": {
+      "invalid_auth": "Invalid email or password.",
+      "cannot_connect": "Could not reach the tekmar gateway service. Try again in a minute.",
+      "no_buildings": "Sign-in worked, but the account has no buildings.",
+      "unknown": "An unexpected error occurred. Check the Home Assistant log."
+    },
+    "abort": {
+      "already_configured": "This building is already configured.",
+      "reauth_successful": "Re-authentication successful."
+    }
+  },
+  "entity": {
+    "sensor": {
+      "boiler_outlet_temp": {
+        "name": "Outlet temperature"
+      },
+      "boiler_inlet_temp": {
+        "name": "Inlet temperature"
+      },
+      "boiler_output": {
+        "name": "Output"
+      },
+      "boiler_runtime": {
+        "name": "Runtime"
+      },
+      "boiler_status": {
+        "name": "Status"
+      }
+    }
+  }
+}

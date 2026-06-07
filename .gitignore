@@ -1,0 +1,13 @@
+__pycache__/
+*.pyc
+*.pyo
+*.bak
+*.swp
+.DS_Store
+.idea/
+.vscode/
+
+# Local development artifacts (never commit)
+*.har
+.tekmar_token.json
+local_tests/
